@@ -1,5 +1,11 @@
-@tailwind base;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@tailwind components;
-
-@tailwind utilities;
+body {
+  // background: #000000;
+  // background: -moz-linear-gradient(-45deg, #000000 0%, #0f104c 100%);
+  // background: -webkit-linear-gradient(-45deg, #000000 0%, #0f104c 100%);
+  // background: linear-gradient(135deg, #000000 0%, #0f104c 100%);
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0f104c',GradientType=1 );
+}
