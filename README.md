@@ -1,8 +1,6 @@
 # Vue 3, TypeScript & Tailwind CSS Starter
 
-> A simple, Vue 3 starter with TypeScript support
-
-[Demo/Installation](https://vue3-typescript-tailwind-starter.vercel.app/)
+> A simple, Vue 3 starter with TypeScript and Sass support
 
 ## Features
 
@@ -57,5 +55,3 @@ This repo was adapted from [vincentdoerig](https://twitter.com/vincentdoerig)'s 
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
-
-Follow [@vincentdoerig](https://twitter.com/vincentdoerig) on Twitter.
