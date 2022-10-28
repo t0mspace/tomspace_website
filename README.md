@@ -9,8 +9,7 @@
 - Vue 3
 - TypeScript
 - Tailwind CSS
-- Simple store with global state
-- Vue Router
+- scss
 - ESLint
 
 ## Project setup and usage
@@ -51,7 +50,7 @@ Contributions, feedback and issues are welcome. Feel free to fork, comment, crit
 
 ## Acknowledgements
 
-This repo was adapted from [Unihen](https://twitter.com/uninen)'s [vite-ts-tailwind-starter](https://github.com/Uninen/vite-ts-tailwind-starter) project.
+This repo was adapted from [vincentdoerig](https://twitter.com/vincentdoerig)'s [vite-ts-tailwind-starter](https://github.com/vincentdoerig/vue3-typescript-tailwind-starter) project.
 
 ## License
 
