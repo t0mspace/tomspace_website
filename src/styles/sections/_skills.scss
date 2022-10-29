@@ -1,0 +1,16 @@
+.content__skills-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5rem;
+}
+
+.content__skills--item {
+    width: 10rem;
+}
+
+.content__skills--item-wrapper {
+    padding: 1rem;
+    margin: auto;
+    width: 15rem;
+    height: 15rem;
+}

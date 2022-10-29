@@ -10,5 +10,9 @@
         "source.fixAll": true
     },
     // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through ESLint already
-    "prettier.disableLanguages": ["javascript", "javascriptreact"]
+    "prettier.disableLanguages": ["javascript", "javascriptreact"],
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "scss.lint.unknownAtRules": "ignore"
 }

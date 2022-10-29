@@ -1,0 +1,44 @@
+.content__presentation {
+    width: 100%;
+}
+
+.content__presentation-picture {
+    width: 50%;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    z-index: 1;
+}
+
+.content__presentation-text {
+    transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    animation: appear 0.38s 1;
+    transform-box: fill-box;
+    animation-timing-function: cubic-bezier(0.63, 0.09, 0.3, 1.43);
+    animation-fill-mode: forwards;
+    transform: scale(0);
+    position: relative;
+}
+
+.content__presentation-text-bubble {
+    padding: 8px;
+    margin: 2rem 1rem 1rem 6rem;
+    color: black;
+    border-radius: 10px;
+    background: white;
+    width: 15rem;
+    z-index: 5;
+}
+
+.content__presentation-text-triangle {
+    display: inline-block;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 50px 0 0;
+    border-color: white transparent transparent transparent;
+    left: 10rem;
+    z-index: 10;
+    top: -17px;
+}

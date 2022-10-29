@@ -2,10 +2,17 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-body {
-    // background: #000000;
-    // background: -moz-linear-gradient(-45deg, #000000 0%, #0f104c 100%);
-    // background: -webkit-linear-gradient(-45deg, #000000 0%, #0f104c 100%);
-    // background: linear-gradient(135deg, #000000 0%, #0f104c 100%);
-    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0f104c',GradientType=1 );
+img,
+svg {
+    display: inline-block;
 }
+
+@import './styles/layout/body';
+@import './styles/layout/navigation';
+@import './styles/layout/header';
+@import './styles/layout/grid';
+@import './styles/sections/presentation';
+@import './styles/sections/skills';
+@import './styles/sections/contact';
+@import './styles/components/animations.scss';
+@import './styles/base/typo.scss';

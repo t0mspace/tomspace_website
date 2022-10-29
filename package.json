@@ -13,7 +13,6 @@
         "prepare": "husky install"
     },
     "dependencies": {
-        "@tailwindcss/forms": "^0.5.3",
         "@tailwindcss/typography": "^0.5.7",
         "@vitejs/plugin-vue": "^3.2.0",
         "tailwindcss": "^3.2.1",
@@ -21,6 +20,7 @@
     },
     "devDependencies": {
         "@babel/eslint-parser": "^7.19.1",
+        "@tailwindcss/forms": "^0.5.3",
         "@typescript-eslint/eslint-plugin": "^5.41.0",
         "@typescript-eslint/parser": "^5.41.0",
         "@vue/compiler-sfc": "^3.2.41",
@@ -33,12 +33,22 @@
         "eslint-plugin-prettier": "^4.2.1",
         "eslint-plugin-vue": "^9.6.0",
         "husky": "^8.0.1",
+        "i": "^0.3.7",
         "lint-staged": "^13.0.3",
         "postcss": "^8.4.18",
         "postcss-easy-import": "^4.0.0",
         "postcss-nested": "^6.0.0",
         "prettier": "2.7.1",
+        "prettier-plugin-tailwindcss": "^0.1.13",
         "sass": "^1.55.0",
+        "stylelint": "^14.14.0",
+        "stylelint-config-prettier": "^9.0.3",
+        "stylelint-config-standard": "^29.0.0",
+        "stylelint-config-standard-scss": "^6.0.0",
+        "stylelint-config-tailwindcss": "^0.0.6",
+        "stylelint-prettier": "^2.0.0",
+        "stylelint-scss": "^4.3.0",
+        "stylelint-selector-bem-pattern": "^2.1.1",
         "typescript": "^4.8.4",
         "vite": "^3.2.0",
         "vite-svg-loader": "^3.6.0"
