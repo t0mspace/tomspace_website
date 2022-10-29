@@ -27,3 +27,9 @@
         transform: scaleX(1) scaleY(1) translateY(0);
     }
 }
+
+@keyframes changeColor {
+    50% {
+        border-color: white;
+    }
+}
