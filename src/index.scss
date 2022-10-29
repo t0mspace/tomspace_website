@@ -7,6 +7,8 @@ svg {
     display: inline-block;
 }
 
+@import './styles/base/basic';
+@import './styles/base/typo';
 @import './styles/layout/body';
 @import './styles/layout/navigation';
 @import './styles/layout/header';
@@ -14,5 +16,4 @@ svg {
 @import './styles/sections/presentation';
 @import './styles/sections/skills';
 @import './styles/sections/contact';
-@import './styles/components/animations.scss';
-@import './styles/base/typo.scss';
+@import './styles/components/animations';
