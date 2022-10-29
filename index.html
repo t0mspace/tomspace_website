@@ -20,7 +20,7 @@
         <blockquote class="content__presentation-text-bubble">
           <span class="text-xl"> Hi ! </span> <br /> <br />
           My name's <strong>Thomas</strong><br>
-          I'm a <strong>full stack web developer</strong> with artistic sensibility.<br><br>
+          I'm a creative <strong>full stack web developer</strong> with artistic sensibility.<br><br>
           Have a nice visit !
         </blockquote>
         <div class="content__presentation-text-triangle"></div>
@@ -66,15 +66,15 @@
     </section>
 
     <section class="content__about-this-site">
-      <h2 class="content__contact-title">About this website</h2>
+      <h2 class="content__about-this-site-title">About this website</h2>
       <p>I created this website first of all to learn Vuejs and discover Tailwindcss and BEM methodology</p><br>
       <p>Technologies used:</p>
       <ul>
         <li>HTML 5</li>
         <li>Sass</li>
-        <li>Vuejs 3</li>
-        <li>Tailwindcss 3</li>
-        <li>Vite</li>
+        <li><a href="//vuejs.org" class="content--link">Vuejs 3</a></li>
+        <li><a href="//tailwindcss.com" class="content--link">Tailwindcss 3</li>
+        <li><a href="//vitejs.dev" class="content--link">Vite</a></li>
       </ul>
       <br>
       <p>Tools used:</p>
@@ -90,30 +90,30 @@
       <h2 class="content__contact-title">Contact me</h2>
       <form class="content_contact-form">
         <div class="mb-6">
-          <label for="firstname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First
+          <label for="firstname" class="block mb-2 text-xl font-medium text-gray-900 dark:text-gray-300">First
+            name</label>
+          <input type="text" id="v"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+            required="">
+        </div>
+        <div class="mb-6">
+          <label for="lastname" class="block mb-2 text-xl font-medium text-gray-900 dark:text-gray-300">Last
             name</label>
           <input type="text" id="v"
             class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
             required="">
         </div>
         <div class="mb-6">
-          <label for="lastname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last
-            name</label>
-          <input type="text" id="v"
-            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-            required="">
-        </div>
-        <div class="mb-6">
-          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+          <label for="email" class="block mb-2 text-xl font-medium text-gray-900 dark:text-gray-300">Your email</label>
           <input type="email" id="email"
             class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-            placeholder="name@flowbite.com" required="">
+            required="">
         </div>
 
-        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
+        <label for="message" class="block mb-2 text-xl font-medium text-gray-900 dark:text-gray-300">Your
           message</label>
         <textarea id="message" rows="4"
-          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          class="block p-2.5 w-full text-xl text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="Leave a comment...">
         </textarea><br>
 
@@ -126,7 +126,7 @@
     </section>
 
     <footer class="footer">
-      copyright tomspace 2022-2030 - all rights reserved
+      <p>copyright tomspace 2022-2030 - all rights reserved</p>
     </footer>
 
   </div>

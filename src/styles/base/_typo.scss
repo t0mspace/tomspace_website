@@ -3,10 +3,12 @@ h2 {
     padding: 1rem;
     border: 1px solid white;
 
-    @apply text-xl font-bold text-slate-200;
+    @apply text-2xl font-bold text-slate-200;
 }
 
 p,
-ul {
-    @apply text-slate-200;
+ul,
+blockquote,
+label {
+    @apply text-xl text-slate-200;
 }

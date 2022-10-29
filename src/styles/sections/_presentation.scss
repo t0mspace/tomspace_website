@@ -3,7 +3,7 @@
 }
 
 .content__presentation-picture {
-    width: 50%;
+    width: 35%;
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
     z-index: 1;
@@ -18,15 +18,34 @@
     animation-fill-mode: forwards;
     transform: scale(0);
     position: relative;
+
+    @apply text-xl text-slate-200;
+}
+
+@media (max-width: 599px) {
+    .content__presentation-text {
+        margin-top: 10rem;
+    }
+
+    .content__presentation-text-triangle {
+        left: 10rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .content__presentation-text {
+        margin: 5rem 0 0 10rem;
+        width: 20rem;
+    }
 }
 
 .content__presentation-text-bubble {
     padding: 8px;
-    margin: 2rem 1rem 1rem 6rem;
+    //margin: 2rem 1rem 1rem 17rem;
     color: black;
     border-radius: 10px;
     background: white;
-    width: 15rem;
+    //width: 25rem;
     z-index: 5;
 }
 
