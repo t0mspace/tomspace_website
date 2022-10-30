@@ -1,3 +1,25 @@
 .header__menu-btn {
     cursor: pointer;
 }
+
+.menu {
+    padding: 2rem;
+    position: absolute;
+    z-index: 1002;
+    background-color: #050038;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    list-style-type: none !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    @apply text-2xl text-white;
+}
+
+.menu__item {
+    margin-bottom: 3rem;
+}
