@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #000000;
     background: url('/assets/images/earth_min.jpg'); /* fallback */
@@ -8,7 +12,6 @@ body {
 }
 
 .container {
-    padding: 1rem 1rem 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,6 +23,10 @@ body {
     .container {
         width: 1000px;
     }
+}
+
+.main {
+    padding: 1rem 1rem 0 1rem;
 }
 
 section {
