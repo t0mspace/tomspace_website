@@ -1,9 +1,11 @@
-.header__logo {
-    width: 65%;
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.header__menu-btn {
-    width: 20%;
+.header__logo {
+    width: 65%;
 }
 
 @media (min-width: 600px) {

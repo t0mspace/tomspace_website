@@ -1,5 +1,5 @@
 .header__menu-btn {
-    cursor: pointer;
+    @apply cursor-pointer;
 }
 
 .menu {
@@ -12,14 +12,15 @@
     bottom: 0px;
     left: 0px;
     display: flex;
-    list-style-type: none !important;
+
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
-    @apply text-2xl text-white;
+    @apply list-none text-2xl text-white;
+    gap: 5rem;
 }
 
-.menu__item {
+.menu__nav-item {
     margin-bottom: 3rem;
 }

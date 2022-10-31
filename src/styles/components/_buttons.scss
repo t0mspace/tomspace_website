@@ -1,7 +1,19 @@
 .header__close-menu-btn {
+    width: 15%;
+    margin-bottom: 3rem;
+    @apply cursor-pointer;
+    margin-left: 16rem;
+}
+
+@media (min-width: 514px) {
+    .header__close-menu-btn {
+        width: 5%;
+        margin-left: 26rem;
+    }
+}
+
+.header__menu-btn {
     width: 10%;
-    max-width: 10%;
 
-
-    cursor: pointer;
+    @apply cursor-pointer;
 }

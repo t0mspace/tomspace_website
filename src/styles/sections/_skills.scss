@@ -19,7 +19,13 @@
 .content__skills--item-wrapper:hover {
     border: 2px solid #050038;
     animation: changeColor 5s infinite;
-    cursor: pointer;
+
+    @apply cursor-pointer;
+}
+
+.content__about-this-site_list {
+    margin: 1rem 0 0 2rem;
+    @apply leading-8;
 }
 
 @media (max-width: 500px) {
