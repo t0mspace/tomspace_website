@@ -15,7 +15,7 @@
 
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     align-content: center;
     @apply list-none text-2xl text-white;
     gap: 5rem;
@@ -23,4 +23,15 @@
 
 .menu__nav-item {
     margin-bottom: 3rem;
+}
+
+.menu__external-links {
+    display: flex;
+    width: 10rem;
+}
+
+.menu__external-links--picture {
+    width: 50%;
+    margin: 0;
+    padding: 0;
 }

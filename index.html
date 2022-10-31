@@ -28,6 +28,18 @@
             <a href="#content__contact" @click="scrollTo('section-contact')">Contact</a>
           </li>
         </nav>
+        <ul class="menu__external-links">
+          <li class="menu__external-links--item">
+            <a href="//github.com/t0mspace">
+              <img class="menu__external-links--picture" src="/assets/logos/github.svg" alt="link to my github repository">
+            </a>
+          </li>
+          <li class="menu__external-links--item">
+            <a href="//codepen.io/t0mspace">
+              <img class="menu__external-links--picture" src="/assets/logos/codepen.svg" alt="link to my codepen repository">
+            </a>
+          </li>
+        </ul>
       </menu>
     </Transition>
 
@@ -109,7 +121,7 @@
 
       <section class="content__contact" id="section-contact">
         <h2 class="content__contact-title">Contact me</h2>
-        <form class="content_contact-form">
+        <!-- <form class="content_contact-form">
           <div class="mb-6">
             <label for="firstname" class="block mb-2 text-xl font-medium text-gray-900 dark:text-gray-300">First
               name</label>
@@ -141,6 +153,27 @@
 
           <button type="submit"
             class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Send</button>
+        </form> -->
+        <form action="https://formspree.io/f/xlevpylw" method="POST" class="content_contact-form">
+          <div class="content__contact--input">
+            <label class="block mb-8 text-xl font-medium text-gray-900 mb- dark:text-gray-300">
+              Your email:
+            </label>
+            <input type="email" name="email"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              required="">
+          </div>
+          <div class="content__contact--input">
+            <label class="block mb-8 text-xl font-medium text-gray-900 tex5t-xl mb- dark:text-gray-300">
+              Your message:
+            </label>
+            <textarea name="message" rows="4"
+              class="block p-2.5 w-full text-xl text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600"></textarea>
+          </div>
+
+          <button type="submit" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4
+            focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800
+            dark">Send</button>
         </form>
       </section>
     </main>
