@@ -11,27 +11,30 @@
 
 <body>
   <div class="container" id="app">
+    <Transition name="slide-fade">
+      <menu class="menu" v-show="showMenu">
+        <img @click="toggleNav()" src="/assets/images/close-menu.svg" class="header__close-menu-btn">
+        <nav class="menu__nav">
+          <li class="menu__nav-item">
+            <a href="#" @click="scrollTo('section-home')">Home</a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#" @click="scrollTo('section-about')">About</a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#" @click="scrollTo('section-skills')">Skills</a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#content__contact" @click="scrollTo('section-contact')">Contact</a>
+          </li>
+        </nav>
+      </menu>
+    </Transition>
 
-    <menu class="menu" v-show="showMenu">
-      <img @click="toggleNav()" src="/assets/images/close-menu.svg" class="header__close-menu-btn">
-      <li class="menu__item">
-        <a href="#" @click="scrollTo('section-home')">Home</a>
-      </li>
-      <li class="menu__item">
-        <a href="#" @click="scrollTo('section-about')">About</a>
-      </li>
-      <li class="menu__item">
-        <a href="#" @click="scrollTo('section-skills')">Skills</a>
-      </li>
-      <li class="menu__item">
-        <a href="#content__contact" @click="scrollTo('section-contact')">Contact</a>
-      </li>
-    </menu>
     <header class="header">
       <img src="/assets/images/logo.svg" alt="logo" class="header__logo">
       <img @click="toggleNav()" src="/assets/images/menu-button.svg" alt="menu-button" class="header__menu-btn">
     </header>
-
 
     <main class="main">
       <section class="content__presentation" id="section-home">
@@ -85,12 +88,14 @@
 
       <section class="content__about-this-site" id="section-about">
         <h2 class="content__about-this-site-title">About this website</h2>
-        <p>I created this website first of all to learn Vuejs and discover Tailwindcss and BEM methodology</p><br>
+        <p>I created this website first of all to learn Vue.js, test Tailwindcss framework and discover
+          <a href="//getbem.com/" class="content--link">BEM methodology</a>
+        </p><br>
         <p>Technologies used:</p>
         <ul class="content__about-this-site_list">
           <li>HTML 5</li>
           <li>Sass</li>
-          <li><a href="//vuejs.org" class="content--link">Vuejs 3</a></li>
+          <li><a href="//vuejs.org" class="content--link">Vue.js 3</a></li>
           <li><a href="//tailwindcss.com" class="content--link">Tailwindcss 3</li>
           <li><a href="//vitejs.dev" class="content--link">Vite</a></li>
         </ul>
