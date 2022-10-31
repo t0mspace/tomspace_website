@@ -1,3 +1,8 @@
 .content__contact--input {
     @apply mb-14;
 }
+
+input:invalid,
+textarea:invalid {
+    border: 2px solid red;
+}
