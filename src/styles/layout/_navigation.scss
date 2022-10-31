@@ -12,10 +12,9 @@
     bottom: 0px;
     left: 0px;
     display: flex;
-
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     align-content: center;
     @apply list-none text-2xl text-white;
     gap: 5rem;
