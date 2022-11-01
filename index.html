@@ -123,48 +123,25 @@
 
       <section class="content__contact" id="section-contact">
         <h2 class="content__contact-title">Contact me</h2>
-        <!-- <form class="content_contact-form">
-          <div class="mb-6">
-            <label for="firstname" class="block mb-2 text-xl font-medium text-gray-900 dark:text-gray-300">First
-              name</label>
-            <input type="text" id="v"
-              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-              required="">
-          </div>
-          <div class="mb-6">
-            <label for="lastname" class="block mb-2 text-xl font-medium text-gray-900 dark:text-gray-300">Last
-              name</label>
-            <input type="text" id="v"
-              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-              required="">
-          </div>
-          <div class="mb-6">
-            <label for="email" class="block mb-2 text-xl font-medium text-gray-900 dark:text-gray-300">Your
-              email</label>
-            <input type="email" id="email"
-              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-              required="">
-          </div>
 
-          <label for="message" class="block mb-2 text-xl font-medium text-gray-900 dark:text-gray-300">Your
-            message</label>
-          <textarea id="message" rows="4"
-            class="block p-2.5 w-full text-xl text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Leave a comment...">
-            </textarea><br>
+        <div v-bind:class="(isFormSubmitted())?'visible p-4 mb-4 text-sm rounded-lg':'invisible'" id="form-alert"
+          role="alert">
+          <div class="form-alert__wrapper">
+            <span v-if="v$.$error">{{formMessage.error.message}}</span>
+            <span v-else-if="!v$.$error">{{formMessage.success.message}}</span>
+          </div>
+        </div>
 
-          <button type="submit"
-            class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Send</button>
-        </form> -->
-        <form action="https://formspree.io/f/xlevpylw" method="POST" class="content_contact-form">
+        <form action="https://formspree.io/f/xlevpylw" method="POST" @submit.prevent="submitForm"
+          class="content_contact-form" novalidate>
           <div class="content__contact--input">
             <label class="block mb-8 text-xl font-medium text-gray-900 mb- dark:text-gray-300">
               Your email:
             </label>
-            <input type="email" name="email"
-              class="peer shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+            <input type="email" v-model="email" name="email"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
               required>
-            <p class="invisible font-light text-red-700 peer-invalid:visible">
+            <p v-if="v$.email.$error" class="font-light text-red-700">
               Please enter a valid email address
             </p>
           </div>
@@ -172,10 +149,10 @@
             <label class="block mb-8 text-xl font-medium text-gray-900 tex5t-xl mb- dark:text-gray-300">
               Your message:
             </label>
-            <textarea name="message" rows="4" required class="peer block p-2.5 w-full text-xl text-gray-900 bg-gray-50 rounded-lg border border-gray-300
+            <textarea name="message" v-model="message" rows="4" required class="block p-2.5 w-full text-xl text-gray-900 bg-gray-50 rounded-lg border border-gray-300
             focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600"></textarea>
-            <p class="invisible font-light text-red-700 peer-invalid:visible">
-              This field cannot be empty
+            <p v-if="v$.message.$error" class="font-light text-red-700">
+              Please enter a valid email address
             </p>
           </div>
 

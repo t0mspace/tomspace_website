@@ -1,11 +1,27 @@
 import { createApp } from 'vue/dist/vue.esm-bundler'
+import useValidate from '@vuelidate/core'
+import { required, email } from '@vuelidate/validators'
 import './index.scss'
 
 const app = createApp({
     data() {
         return {
+            v$: useValidate(),
             name: 'Thomas',
             showMenu: false,
+            email: '',
+            message: '',
+            formSubmit: false,
+            formMessage: {
+                success: {
+                    message: 'Message successfully sent !',
+                    color: 'green',
+                },
+                error: {
+                    message: 'Please correct the errors in the form.',
+                    color: 'red',
+                },
+            },
         }
     },
     created() {
@@ -13,6 +29,12 @@ const app = createApp({
     },
     destroyed() {
         window.removeEventListener('scroll', this.handleScroll)
+    },
+    validations() {
+        return {
+            email: { required, email },
+            message: { required },
+        }
     },
     methods: {
         toggleNav: function () {
@@ -36,6 +58,19 @@ const app = createApp({
             } else {
                 header?.classList.remove('header--isFixed')
             }
+        },
+        submitForm() {
+            let formAlert = document.querySelector('.form-alert__wrapper')
+            this.formSubmit = true
+            this.v$.$validate()
+            if (this.v$.$error) {
+                formAlert?.classList.add('form--error')
+            } else {
+                formAlert?.classList.add('form--success')
+            }
+        },
+        isFormSubmitted() {
+            return this.formSubmit
         },
     },
 })
