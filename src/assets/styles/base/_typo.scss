@@ -1,0 +1,14 @@
+@use '../abstract/variables' as variables;
+
+h2 {
+    margin: 0 0 3rem 0;
+    padding: 1rem;
+    font-family: variables.$font-family-headings;
+}
+
+p,
+ul,
+blockquote,
+label {
+    font-family: variables.$font-family-text;
+}
