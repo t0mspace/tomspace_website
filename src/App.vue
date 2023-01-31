@@ -1,8 +1,13 @@
 <script setup lang="ts">
-import SiteBackground from "./components/SiteBackground.vue";
+import SiteBackground from "./components/BackgroundComponent.vue";
+import Header from "./components/HeaderComponent.vue";
 </script>
 
 <template>
+  <header>
+    <Header />
+  </header>
+
   <main>
     <SiteBackground></SiteBackground>
   </main>

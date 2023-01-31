@@ -67,17 +67,14 @@ export default {
         },
         value: 1
       },
-      twinkle: {
-        particles: {
-          enable: true,
-          color: '#ffff00',
-          frequency: 0.5,
-          opacity: 1
-        }
-      }
     }
   }" 
 />
 </template>
 
-<style scoped></style>
+<style scoped>
+#tsparticles {
+  z-index: -10;
+  position: relative;
+}
+</style>
