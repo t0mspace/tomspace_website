@@ -4,15 +4,15 @@ $z-index: (
   menu: 200,
   footer: 90,
   earth: 100,
-  astronaut: 100,
-  phylacter: 200,
+  astronaut: 200,
+  phylacter: 300,
   burger: 300,
 );
 
-@function z-index($key) {
+@function zIndex($key) {
   @return map-get($z-index, $key);
 }
 
-@mixin z-index($key) {
+@mixin zIndex($key) {
   z-index: z-index($key);
 }
