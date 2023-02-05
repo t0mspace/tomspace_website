@@ -27,7 +27,7 @@ export default {
 <template>
   <header class="header-container flex flex-row justify-around">
     <img :src="logo" class="header__logo" alt="logo" />
-    <h1 class="header__title">Tom'space</h1>
+    <h1 class="header__title">TOM'SPACE</h1>
     <img
       :src="menu"
       class="header__menu-btn"

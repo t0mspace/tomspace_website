@@ -18,6 +18,8 @@ export default defineConfig({
         additionalData: `
           @import "@/assets/styles/abstract/_variables.scss";
           @import "@/assets/styles/utils/_z-index.scss";
+          @import "@/assets/styles/utils/grillade.scss";
+          @import "@/assets/styles/base/_typo.scss";
         `,
       },
     },

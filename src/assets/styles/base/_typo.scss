@@ -12,3 +12,8 @@ blockquote,
 label {
   font-family: variables.$font-family-text;
 }
+
+.section_title {
+  font-family: variables.$font-family-title;
+  color: map-get($colors, "secondary-accent", "base");
+}
