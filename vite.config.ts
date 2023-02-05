@@ -20,6 +20,7 @@ export default defineConfig({
           @import "@/assets/styles/utils/_z-index.scss";
           @import "@/assets/styles/utils/grillade.scss";
           @import "@/assets/styles/base/_typo.scss";
+          @import "@/assets/styles/sections/contact.scss";
         `,
       },
     },
