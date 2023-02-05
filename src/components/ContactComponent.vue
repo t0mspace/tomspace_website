@@ -87,12 +87,10 @@ export default {
           required
           class="contact_input-message"
         ></textarea>
-        <p v-if="v$.message.$error" class="">
-          Please enter a valid email address
-        </p>
+        <p v-if="v$.message.$error" class="">Please enter a message</p>
       </div>
 
-      <button type="submit" class="btn">Send</button>
+      <button type="submit" class="btn btn-submit">Send</button>
     </form>
   </section>
 </template>

@@ -22,3 +22,21 @@ textarea {
   background-color: white;
   border-radius: 0.25rem;
 }
+
+.btn-submit {
+  border: 2px solid $secondary-accent !important;
+  border-radius: 0.25rem;
+  background-color: $primary;
+  color: $secondary-accent;
+  width: 35%;
+  font-size: medium;
+}
+
+.btn {
+  transition-duration: 0.4s;
+  &:hover {
+    background-color: $secondary-accent;
+    color: $primary;
+    font-weight: bolder;
+  }
+}
