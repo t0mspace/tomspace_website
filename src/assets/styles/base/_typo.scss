@@ -15,5 +15,57 @@ label {
 
 .section_title {
   font-family: variables.$font-family-title;
-  color: map-get($colors, "secondary-accent", "base");
+  color: $secondary-accent;
+}
+
+.section-container {
+  font-family: variables.$font-family-text;
+  color: $secondary;
+  font-size: large;
+}
+
+/* Underline styles */
+a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
+/* Slide in */
+a {
+  text-decoration: none;
+  color: $secondary;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: $primary-accent;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $primary-accent;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul > li {
+  margin: 0.5em 0;
+  line-height: 1.15;
 }

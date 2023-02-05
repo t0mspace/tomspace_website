@@ -1,79 +1,79 @@
 @keyframes float {
-    0% {
-        transform: translatey(0px);
-    }
-    50% {
-        transform: translatey(-20px);
-    }
-    100% {
-        transform: translatey(0px);
-    }
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 @keyframes appear {
-    0% {
-        transform: scaleX(0) scaleY(0) translateY(0);
-    }
+  0% {
+    transform: scaleX(0) scaleY(0) translateY(0);
+  }
 
-    80% {
-        transform: scaleX(1.3) scaleY(1.3) translateY(0);
-    }
+  80% {
+    transform: scaleX(1.3) scaleY(1.3) translateY(0);
+  }
 
-    90% {
-        transform: scaleX(1.2) scaleY(1.2) translateY(0);
-    }
+  90% {
+    transform: scaleX(1.2) scaleY(1.2) translateY(0);
+  }
 
-    100% {
-        transform: scaleX(1) scaleY(1) translateY(0);
-    }
+  100% {
+    transform: scaleX(1) scaleY(1) translateY(0);
+  }
 }
 
 @keyframes changeColor {
-    50% {
-        border-color: white;
-    }
+  50% {
+    border-color: white;
+  }
 }
 
 .slide-fade-enter-active {
-    transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .slide-fade-leave-active {
-    transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .slide-fade-enter-from,
 .slide-fade-leave-to {
-    transform: translateX(20px);
-    opacity: 0;
+  transform: translateX(20px);
+  opacity: 0;
 }
 
 @keyframes twinkle {
-    0% {
-        transform: scale(1, 1);
+  0% {
+    transform: scale(1, 1);
 
-        background: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0);
 
-        animation-timing-function: ease-in;
-    }
+    animation-timing-function: ease-in;
+  }
 
-    60% {
-        transform: scale(0.8, 0.8);
+  60% {
+    transform: scale(0.8, 0.8);
 
-        background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 1);
 
-        animation-timing-function: ease-out;
-    }
+    animation-timing-function: ease-out;
+  }
 
-    80% {
-        background: rgba(255, 255, 255, 0);
+  80% {
+    background: rgba(255, 255, 255, 0);
 
-        transform: scale(1, 1);
-    }
+    transform: scale(1, 1);
+  }
 
-    100% {
-        background: rgba(255, 255, 255, 0);
+  100% {
+    background: rgba(255, 255, 255, 0);
 
-        transform: scale(1, 1);
-    }
+    transform: scale(1, 1);
+  }
 }

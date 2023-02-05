@@ -3,6 +3,7 @@ import SiteBackground from "./components/BackgroundComponent.vue";
 import Header from "./components/HeaderComponent.vue";
 import HomeComponent from "./components/HomeComponent.vue";
 import SkillsComponent from "./components/SkillsComponent.vue";
+import AboutComponent from "./components/AboutComponent.vue";
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import SkillsComponent from "./components/SkillsComponent.vue";
     <SiteBackground />
     <HomeComponent />
     <SkillsComponent />
+    <AboutComponent />
   </main>
 </template>
 
