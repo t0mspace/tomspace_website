@@ -159,7 +159,17 @@ $colors: (
     light: lighten($secondary-accent, $lighten),
     dark: darken($secondary-accent, $darken),
   ),
+  skills: (
+    base: $primary,
+    light: lighten($primary, $lighten),
+    dark: darken($primary, $darken),
+  ),
 );
+
+@function getColor($base, $shade: base) {
+  $color: map-get(map-get($colors, $base), $shade);
+  @return $color;
+}
 
 // Variables couleurs statuts
 
