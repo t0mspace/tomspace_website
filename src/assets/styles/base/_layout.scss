@@ -45,7 +45,7 @@
   max-width: 100%;
 }
 
-section {
+section:not(.home) {
   margin-bottom: 25rem;
   padding: 1rem;
 }

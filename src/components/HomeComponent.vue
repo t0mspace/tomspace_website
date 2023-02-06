@@ -40,6 +40,10 @@ export default {
 </template>
 
 <style lang="scss">
+.home {
+  margin-bottom: 80rem;
+}
+
 .home_intro-astronaut {
   width: 30%;
   margin-top: 22rem;
@@ -96,7 +100,7 @@ export default {
   .home_intro-earth {
     left: 0rem;
     width: 100%;
-    top: 50rem;
+    top: 40rem;
   }
 }
 
@@ -104,17 +108,22 @@ export default {
   .home_intro-astronaut {
     width: 15%;
     left: 30rem;
+    top: 12rem;
   }
 
   .home_intro-text {
     width: 30rem;
-    left: 8rem;
+    left: 15rem;
   }
 
   .home_intro-earth {
     width: 80%;
     left: -10rem;
     top: 40rem;
+  }
+
+  .home_intro-triangle {
+    left: 22rem;
   }
 }
 

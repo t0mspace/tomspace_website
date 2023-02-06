@@ -4,6 +4,9 @@ import { required, email } from "@vuelidate/validators";
 
 export default {
   name: "ContactComponent",
+  created() {
+    this.$data.formSubmit = false;
+  },
   data() {
     return {
       v$: useValidate(),
@@ -53,6 +56,7 @@ export default {
     <h2 class="section_title">Contact me</h2>
     <div
       bind:class="(isFormSubmitted)?'is-visible':'is-hidden'"
+      v-show="formSubmit"
       id="form-alert"
       role="alert"
       class="form-alert"
@@ -117,7 +121,7 @@ export default {
 }
 
 .contact_input-message {
-  width: 100%;
+  width: 50%;
   // &:focus {
   //   border: 1px solid red !important;
   // }
@@ -148,4 +152,8 @@ textarea {
     font-weight: bolder;
   }
 }
+
+// #form-alert {
+//   display: none;
+// }
 </style>

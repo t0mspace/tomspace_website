@@ -22,8 +22,4 @@ import ContactComponent from "./components/ContactComponent.vue";
   </main>
 </template>
 
-<style lang="scss">
-section {
-  height: 100vh;
-}
-</style>
+<style lang="scss"></style>
