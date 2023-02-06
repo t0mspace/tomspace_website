@@ -1,0 +1,19 @@
+.is-hidden {
+  display: none;
+}
+
+.is-visible {
+  display: inline-block;
+}
+
+.info-success {
+  padding: 1rem;
+  background-color: $success;
+  color: $secondary;
+}
+
+.info-error {
+  padding: 1rem;
+  background-color: $error;
+  color: $secondary;
+}

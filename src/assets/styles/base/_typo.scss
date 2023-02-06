@@ -33,14 +33,14 @@ a {
 
 /* Slide in */
 a {
+  color: $secondary-accent;
   text-decoration: none;
-  color: $secondary;
 }
 
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: $primary-accent;
+  color: $secondary-accent;
 }
 
 .hover-underline-animation:after {
@@ -51,7 +51,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: $primary-accent;
+  background-color: $secondary-accent;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

@@ -45,5 +45,6 @@ section {
 }
 
 .hr {
-  border-top: 1px dotted $secondary-accent;
+  border-top: 1px solid $secondary-accent;
+  width: 5rem;
 }

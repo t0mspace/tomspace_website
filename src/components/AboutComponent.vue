@@ -12,9 +12,7 @@ export default {
     <h2 class="section_title">About</h2>
     <p>
       I've created this website first of all to learn
-      <i
-        ><a class="hover-underline-animation" href="//vuejs.org/">Vue.js</a>
-      </i>
+      <i><a class="hover-underline-animation" href="//vuejs.org/">Vue.js</a></i>
       and express my creativity.
     </p>
     <p>Technologies used</p>

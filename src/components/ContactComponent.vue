@@ -51,12 +51,17 @@ export default {
 <template>
   <section class="section-container">
     <h2 class="section_title">Contact me</h2>
-    <!-- <div bind:class="" id="form-alert" role="alert" class="form-alert">
+    <div
+      bind:class="(isFormSubmitted)?'is-visible':'is-hidden'"
+      id="form-alert"
+      role="alert"
+      class="form-alert"
+    >
       <div class="form-alert__wrapper">
         <span v-if="v$.$error">{{ formMessage.error.message }}</span>
         <span v-else-if="!v$.$error">{{ formMessage.success.message }}</span>
       </div>
-    </div> -->
+    </div>
 
     <form
       action="https://formspree.io/f/xlevpylw"
@@ -74,7 +79,7 @@ export default {
           class="contact_input-email"
           required
         />
-        <p v-if="v$.email.$error" class="">
+        <p v-if="v$.email.$error" class="info-error">
           Please enter a valid email address
         </p>
       </div>
@@ -87,7 +92,9 @@ export default {
           required
           class="contact_input-message"
         ></textarea>
-        <p v-if="v$.message.$error" class="">Please enter a message</p>
+        <p v-if="v$.message.$error" class="info-error">
+          Please enter a message
+        </p>
       </div>
 
       <button type="submit" class="btn btn-submit">Send</button>
@@ -95,4 +102,50 @@ export default {
   </section>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+.contact_label {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.contact_input {
+  width: 100%;
+}
+
+.contact_input-container {
+  margin-bottom: 2rem;
+}
+
+.contact_input-message {
+  width: 100%;
+  // &:focus {
+  //   border: 1px solid red !important;
+  // }
+}
+
+input,
+select,
+textarea {
+  background-color: white;
+  border-radius: 0.25rem;
+  min-height: 2rem;
+}
+
+.btn-submit {
+  border: 2px solid $secondary-accent !important;
+  border-radius: 0.25rem;
+  background-color: $primary;
+  color: $secondary-accent;
+  width: 35%;
+  font-size: medium;
+}
+
+.btn {
+  transition-duration: 0.4s;
+  &:hover {
+    background-color: $secondary-accent;
+    color: $primary;
+    font-weight: bolder;
+  }
+}
+</style>
