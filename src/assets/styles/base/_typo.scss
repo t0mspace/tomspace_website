@@ -6,11 +6,20 @@ h1 {
   font-family: variables.$font-family-headings;
 }
 
+.section_title {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
 p,
 ul,
 blockquote,
 label {
   font-family: variables.$font-family-text;
+  font-size: 1.5rem;
 }
 
 .section_title {

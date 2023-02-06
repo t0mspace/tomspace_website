@@ -41,24 +41,24 @@ export default {
 
 <style lang="scss">
 .home_intro-astronaut {
-  width: 50%;
+  width: 30%;
   margin-top: 22rem;
   z-index: zIndex("astronaut");
   position: absolute;
-  transform: translatey(0px);
+
   animation: float 6s ease-in-out infinite;
 }
 
 .home_intro-earth {
-  position: relative;
-  left: 3rem;
-  top: 9rem;
+  position: absolute;
+  left: 0;
+  width: 30%;
 }
 
 .home_intro {
   color: black;
   font-family: $font-family-text;
-  font-size: larger;
+  font-size: x-large;
 }
 
 .home_intro-text {
@@ -66,6 +66,8 @@ export default {
   border: 2px solid gray;
   border-radius: 6px;
   z-index: zIndex("phylacter");
+  width: 20rem;
+  position: absolute;
 }
 
 .home_intro-triangle {
@@ -88,5 +90,53 @@ export default {
 .home_intro-hello {
   font-size: 4.3rem;
   font-weight: bold;
+}
+
+@media (max-width: $small) {
+  .home_intro-earth {
+    left: 0rem;
+    width: 100%;
+    top: 50rem;
+  }
+}
+
+@media (min-width: $small) and (max-width: 1399px) {
+  .home_intro-astronaut {
+    width: 15%;
+    left: 30rem;
+  }
+
+  .home_intro-text {
+    width: 30rem;
+    left: 8rem;
+  }
+
+  .home_intro-earth {
+    width: 80%;
+    left: -10rem;
+    top: 40rem;
+  }
+}
+
+@media (min-width: $large) {
+  .home_intro-text {
+    width: 30rem;
+    left: 55rem;
+  }
+
+  .home_intro-triangle {
+    left: 15rem;
+  }
+
+  .home_intro-astronaut {
+    top: 13rem;
+    width: 15%;
+    left: 60rem;
+  }
+
+  .home_intro-earth {
+    width: 40%;
+    top: 40rem;
+  }
 }
 </style>

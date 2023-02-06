@@ -22,7 +22,9 @@
 }
 
 #app {
-  max-width: 80rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* Hero box  */
@@ -44,7 +46,7 @@
 }
 
 section {
-  margin-bottom: 15rem;
+  margin-bottom: 25rem;
   padding: 1rem;
 }
 

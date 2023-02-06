@@ -131,16 +131,24 @@ export default {
 //   margin: 0 2rem 2rem 2rem;
 // }
 
+.skills {
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 .skills_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-gap: 1rem;
+  margin-top: 4rem;
 }
 
 .skills_grid > div {
   background: getColor(skills, light);
   padding: 1rem;
-  display: grid;
+  display: inline-block;
+  text-align: center;
 }
 
 // .skills_grid > div::before {

@@ -10,7 +10,7 @@ import ContactComponent from "./components/ContactComponent.vue";
 <template>
   <Header />
 
-  <main>
+  <main class="layout-hero">
     <SiteBackground />
     <HomeComponent />
     <hr class="hr" />
@@ -22,4 +22,8 @@ import ContactComponent from "./components/ContactComponent.vue";
   </main>
 </template>
 
-<style scoped></style>
+<style lang="scss">
+section {
+  height: 100vh;
+}
+</style>
