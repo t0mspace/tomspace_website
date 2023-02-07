@@ -92,7 +92,7 @@ export default {
         <textarea
           name="message"
           v-model="message"
-          rows="4"
+          rows="6"
           required
           class="contact_input-message"
         ></textarea>
@@ -118,13 +118,18 @@ export default {
 
 .contact_input-container {
   margin-bottom: 2rem;
+  width: 40rem;
 }
 
 .contact_input-message {
-  width: 50%;
+  width: 50rem;
   // &:focus {
   //   border: 1px solid red !important;
   // }
+}
+
+.contact_input-email {
+  width: 20rem;
 }
 
 input,

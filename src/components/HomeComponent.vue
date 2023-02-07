@@ -28,10 +28,10 @@ export default {
           <span class="home_intro-hello"> Hi ! </span> <br />
           <br />
           My name's <strong>Thomas</strong><br />
-          I'm a creative <strong>developer</strong><br /><br />
+          I'm a creative geek<br /><br />
           Have a nice visit !
         </blockquote>
-        <div class="home_intro-triangle"></div>
+        <div class="home_intro-triangle flip-y"></div>
       </div>
       <img :src="astronaut" class="home_intro-astronaut" alt="astronaut" />
     </div>
@@ -130,15 +130,15 @@ export default {
 @media (min-width: $large) {
   .home_intro-text {
     width: 30rem;
-    left: 55rem;
+    left: 40rem;
   }
 
   .home_intro-triangle {
-    left: 15rem;
+    left: 23rem;
   }
 
   .home_intro-astronaut {
-    top: 13rem;
+    top: 8rem;
     width: 15%;
     left: 60rem;
   }

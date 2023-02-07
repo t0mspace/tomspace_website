@@ -103,7 +103,7 @@ export default {
   }
 
   .header__menu-btn {
-    width: 5%;
+    width: 4%;
   }
 
   // .home_intro-text {

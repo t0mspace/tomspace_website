@@ -11,17 +11,10 @@ export default {
   <section class="section-container">
     <h2 class="section_title">About</h2>
     <p>
-      I've created this website first of all to learn
-      <i><a class="hover-underline-animation" href="//vuejs.org/">Vue.js</a></i>
-      and express my creativity.
+      I've created this website first of all to express my creativity.<br />
+      In a second time, I'd like to write articles in a blog.
     </p>
-    <p>Technologies used</p>
-    <ul>
-      <li>HTML 5</li>
-      <li>Sass</li>
-      <li>Vuejs 3</li>
-      <li>Vite</li>
-    </ul>
+    Business to follow...
   </section>
 </template>
 

@@ -17,3 +17,7 @@
   background-color: $error;
   color: $secondary;
 }
+
+.flip-y {
+  transform: scaleX(-1);
+}
