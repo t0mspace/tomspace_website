@@ -9,10 +9,10 @@ import ContactComponent from "./components/ContactComponent.vue";
 
 <template>
   <Header />
+  <HomeComponent />
+  <SiteBackground />
 
-  <main class="layout-hero">
-    <SiteBackground />
-    <HomeComponent />
+  <main class="main">
     <hr class="hr" />
     <SkillsComponent />
     <hr class="hr" />

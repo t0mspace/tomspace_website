@@ -52,7 +52,7 @@ export default {
 </script>
 
 <template>
-  <section class="section-container">
+  <section class="section-container contact">
     <h2 class="section_title">Contact me</h2>
     <div
       bind:class="(isFormSubmitted)?'is-visible':'is-hidden'"
@@ -118,18 +118,6 @@ export default {
 
 .contact_input-container {
   margin-bottom: 2rem;
-  width: 40rem;
-}
-
-.contact_input-message {
-  width: 50rem;
-  // &:focus {
-  //   border: 1px solid red !important;
-  // }
-}
-
-.contact_input-email {
-  width: 20rem;
 }
 
 input,
@@ -138,6 +126,15 @@ textarea {
   background-color: white;
   border-radius: 0.25rem;
   min-height: 2rem;
+  width: 21rem;
+
+  @media (min-width: $medium) {
+    input,
+    select,
+    textarea {
+      width: 25rem;
+    }
+  }
 }
 
 .btn-submit {
@@ -145,8 +142,8 @@ textarea {
   border-radius: 0.25rem;
   background-color: $primary;
   color: $secondary-accent;
-  width: 35%;
   font-size: medium;
+  width: 10rem;
 }
 
 .btn {

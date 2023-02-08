@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <section class="home">
+  <section class="section-container home">
     <div class="home-container">
       <div class="home_intro-text">
         <blockquote class="home_intro">

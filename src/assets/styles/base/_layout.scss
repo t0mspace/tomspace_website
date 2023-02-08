@@ -21,10 +21,20 @@
   grid-column: 2;
 }
 
-#app {
+.main {
   display: flex;
+
   justify-content: center;
   flex-direction: column;
+
+  //align-items: center;
+  //align-content: center;
+}
+
+@media (min-width: $large) {
+  .main {
+    padding: 0 15rem 0 15rem;
+  }
 }
 
 /* Hero box  */
@@ -43,6 +53,15 @@
   grid-column: 1 / -1;
   justify-self: center;
   max-width: 100%;
+}
+
+.section-container {
+  align-items: center;
+  justify-content: center;
+}
+
+.section_title {
+  margin: 0 0 4rem 0;
 }
 
 section:not(.home) {

@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <section class="section-container">
+  <section class="section-container about">
     <h2 class="section_title">About</h2>
     <p>
       I've created this website first of all to express my creativity.<br />

@@ -83,43 +83,41 @@ export default {
 </script>
 
 <template>
-  <section class="skills">
-    <div class="section-container">
-      <h2 class="section_title">My Skills</h2>
-      <div class="skills_grid">
-        <div>
-          <img :src="html5" class="skills_item filter-yellow" />
-        </div>
-        <div>
-          <img :src="css" alt="" class="skills_item" />
-        </div>
-        <div>
-          <img :src="sass" alt="" class="skills_item" />
-        </div>
-        <div>
-          <img :src="js" alt="" class="skills_item" />
-        </div>
-        <div>
-          <img :src="php" alt="" class="skills_item" />
-        </div>
-        <div>
-          <img :src="python" alt="" class="skills_item" />
-        </div>
-        <div>
-          <img :src="ts" alt="" class="skills_item" />
-        </div>
-        <div>
-          <img :src="symfony" alt="" class="skills_item" />
-        </div>
-        <div>
-          <img :src="vue" alt="" class="skills_item" />
-        </div>
-        <div>
-          <img :src="ubuntu" alt="" class="skills_item" />
-        </div>
-        <div>
-          <img :src="git" alt="" class="skills_item" />
-        </div>
+  <section class="section-container skills">
+    <h2 class="section_title">My Skills</h2>
+    <div class="skills_grid">
+      <div>
+        <img :src="html5" class="skills_item filter-yellow" />
+      </div>
+      <div>
+        <img :src="css" alt="" class="skills_item" />
+      </div>
+      <div>
+        <img :src="sass" alt="" class="skills_item" />
+      </div>
+      <div>
+        <img :src="js" alt="" class="skills_item" />
+      </div>
+      <div>
+        <img :src="php" alt="" class="skills_item" />
+      </div>
+      <div>
+        <img :src="python" alt="" class="skills_item" />
+      </div>
+      <div>
+        <img :src="ts" alt="" class="skills_item" />
+      </div>
+      <div>
+        <img :src="symfony" alt="" class="skills_item" />
+      </div>
+      <div>
+        <img :src="vue" alt="" class="skills_item" />
+      </div>
+      <div>
+        <img :src="ubuntu" alt="" class="skills_item" />
+      </div>
+      <div>
+        <img :src="git" alt="" class="skills_item" />
       </div>
     </div>
   </section>
@@ -149,6 +147,7 @@ export default {
   padding: 1rem;
   display: inline-block;
   text-align: center;
+  //grid-column: span 2;
 }
 
 // .skills_grid > div::before {
