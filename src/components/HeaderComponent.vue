@@ -196,4 +196,40 @@ export default {
   margin: 0;
   padding: 0;
 }
+
+.header__close-menu-btn {
+  width: 15%;
+  margin-bottom: 3rem;
+  margin-left: 16rem;
+}
+
+@media (min-width: 514px) {
+  .header__close-menu-btn {
+    width: 3%;
+    margin-left: 26rem;
+  }
+}
+
+.header__close-menu-btn,
+.header__menu-btn {
+  cursor: pointer;
+}
+
+.header__close-menu-btn {
+  width: 15%;
+  margin-bottom: 3rem;
+  margin-left: 16rem;
+}
+
+@media (min-width: 514px) {
+  .header__close-menu-btn {
+    width: 3%;
+    margin-left: 26rem;
+  }
+}
+
+.header__close-menu-btn,
+.header__menu-btn {
+  cursor: pointer;
+}
 </style>
