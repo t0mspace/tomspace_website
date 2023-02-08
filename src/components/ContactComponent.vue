@@ -154,8 +154,4 @@ textarea {
     font-weight: bolder;
   }
 }
-
-// #form-alert {
-//   display: none;
-// }
 </style>

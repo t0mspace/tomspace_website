@@ -1,7 +1,12 @@
 <script lang="ts">
 // Please just use `@` to refer to the root "src" directory of the project
 const logo = new URL("@/assets/images/logo.svg", import.meta.url).href;
-const menuButton = new URL("@/assets/images/menu.svg", import.meta.url).href;
+const openMenuButton = new URL("@/assets/images/openMenu.svg", import.meta.url)
+  .href;
+const closeMenuButton = new URL(
+  "@/assets/images/closeMenu.svg",
+  import.meta.url
+).href;
 
 export default {
   name: "HeaderComponent",
@@ -13,12 +18,32 @@ export default {
   setup() {
     return {
       logo: logo,
-      menu: menuButton,
+      openMenuButton: openMenuButton,
+      closeMenuButton: closeMenuButton,
     };
   },
   methods: {
     toggleNav: function () {
       this.showMenu = !this.showMenu;
+    },
+    scrollTo(refName: string) {
+      this.toggleNav();
+      const element = document.querySelector(refName)! as HTMLElement;
+      const top = element?.offsetTop;
+
+      window.scrollTo({
+        top: top,
+        left: 0,
+        behavior: "smooth",
+      });
+    },
+    handleScroll(event) {
+      const header = document.querySelector(".header")! as HTMLElement;
+      if (window.scrollY >= window.innerHeight) {
+        header?.classList.add("header--isFixed");
+      } else {
+        header?.classList.remove("header--isFixed");
+      }
     },
   },
 };
@@ -29,12 +54,35 @@ export default {
     <img :src="logo" class="header__logo" alt="logo" />
     <h1 class="header__title"><span>T M'</span>SPACE</h1>
     <img
-      :src="menu"
+      :src="openMenuButton"
       class="header__menu-btn"
       alt="menu button"
-      @click="toggleNav"
+      @click="toggleNav()"
     />
   </header>
+  <Transition name="slide-fade">
+    <menu class="menu" v-show="showMenu">
+      <img
+        @click="toggleNav()"
+        :src="closeMenuButton"
+        class="header__close-menu-btn filter-yellow"
+      />
+      <nav class="menu__nav">
+        <li class="menu__nav-item">
+          <a href="#" @click="scrollTo('.home')">Home</a>
+        </li>
+        <li class="menu__nav-item">
+          <a href="#" @click="scrollTo('.about')">About</a>
+        </li>
+        <li class="menu__nav-item">
+          <a href="#" @click="scrollTo('.skills')">Skills</a>
+        </li>
+        <li class="menu__nav-item">
+          <a href="#content__contact" @click="scrollTo('.contact')">Contact</a>
+        </li>
+      </nav>
+    </menu>
+  </Transition>
 </template>
 
 <style lang="scss">
@@ -105,10 +153,6 @@ export default {
   .header__menu-btn {
     width: 4%;
   }
-
-  // .home_intro-text {
-  //   width: 30rem;
-  // }
 }
 
 @media (min-width: $large) {
@@ -116,13 +160,40 @@ export default {
     width: 2%;
     left: 2.3rem;
   }
+}
 
-  // .home_intro-text {
-  //   width: 30rem;
-  // }
+.menu {
+  padding: 2rem;
+  position: fixed;
+  z-index: 2000;
+  background-color: $primary;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  font-family: $font-family-title;
+  font-size: xx-large;
+  margin: 0;
+  list-style-type: none;
+}
 
-  // .header__menu-btn {
-  //   width: 5%;
-  // }
+.menu__nav-item {
+  margin-bottom: 3rem;
+}
+
+.menu__external-links {
+  display: flex;
+  width: 10rem;
+}
+
+.menu__external-links--picture {
+  width: 50%;
+  margin: 0;
+  padding: 0;
 }
 </style>

@@ -87,7 +87,7 @@ export default {
     <h2 class="section_title">My Skills</h2>
     <div class="skills_grid">
       <div>
-        <img :src="html5" class="skills_item filter-yellow" />
+        <img :src="html5" class="skills_item" />
       </div>
       <div>
         <img :src="css" alt="" class="skills_item" />
@@ -124,11 +124,6 @@ export default {
 </template>
 
 <style lang="scss">
-// .skills_item {
-//   width: 8rem;
-//   margin: 0 2rem 2rem 2rem;
-// }
-
 .skills {
   align-items: center;
   justify-content: center;
@@ -149,12 +144,6 @@ export default {
   text-align: center;
   //grid-column: span 2;
 }
-
-// .skills_grid > div::before {
-//   content: "";
-//   padding-bottom: 100%;
-//   display: block;
-// }
 
 .skills_grid > div::before,
 .skills_grid > div > img {

@@ -21,3 +21,12 @@
 .flip-y {
   transform: scaleX(-1);
 }
+
+.header--isFixed {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+}
