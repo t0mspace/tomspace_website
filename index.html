@@ -2,178 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="./favicon.ico" />
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tom'space</title>
-  <script type="module" crossorigin src="./assets/index.70f3e1a5.js"></script>
-  <link rel="stylesheet" href="./assets/index.259777c7.css">
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOM'SPACE</title>
+  <script type="module" crossorigin src="/assets/index-4e3cd1b5.js"></script>
+  <link rel="stylesheet" href="/assets/index-6b2a33a0.css">
 </head>
 
 <body>
-  <div class="container" id="app">
-    <Transition name="slide-fade">
-      <menu class="menu" v-show="showMenu">
-        <img @click="toggleNav()" src="assets/images/close-menu.svg" class="header__close-menu-btn">
-        <nav class="menu__nav">
-          <li class="menu__nav-item">
-            <a href="#" @click="scrollTo('section-home')">Home</a>
-          </li>
-          <li class="menu__nav-item">
-            <a href="#" @click="scrollTo('section-about')">About</a>
-          </li>
-          <li class="menu__nav-item">
-            <a href="#" @click="scrollTo('section-skills')">Skills</a>
-          </li>
-          <li class="menu__nav-item">
-            <a href="#content__contact" @click="scrollTo('section-contact')">Contact</a>
-          </li>
-        </nav>
-        <ul class="menu__external-links">
-          <li class="menu__external-links--item">
-            <a href="//github.com/t0mspace">
-              <img class="menu__external-links--picture" src="assets/logos/github.svg"
-                alt="link to my github repository">
-            </a>
-          </li>
-          <li class="menu__external-links--item">
-            <a href="//codepen.io/t0mspace">
-              <img class="menu__external-links--picture" src="assets/logos/codepen.svg"
-                alt="link to my codepen repository">
-            </a>
-          </li>
-        </ul>
-      </menu>
-    </Transition>
-
-    <header class="header">
-      <img src="assets/images/logo.svg" alt="logo" class="header__logo">
-      <img @click="toggleNav()" src="assets/images/menu-button.svg" alt="menu-button" class="header__menu-btn">
-    </header>
-
-    <main class="main">
-      <section class="content__presentation" id="section-home">
-        <div class="content__presentation-text">
-          <blockquote class="content__presentation-text-bubble">
-            <span class="text-xl"> Hi ! </span> <br /> <br />
-            My name's <strong>{{name}}</strong><br>
-            I'm a creative <strong>full stack web developer</strong> with artistic sensibility.<br><br>
-            Have a nice visit !
-          </blockquote>
-          <div class="content__presentation-text-triangle"></div>
-        </div>
-        <img src="assets/images/astronaut.png" alt="astronaut" class="content__presentation-picture">
-      </section>
-
-      <section class="content__skills" id="section-skills">
-        <h2 class="content__skills-title">My skills</h2>
-        <div class="content__skills-container">
-          <div class="w-full content__skills--item-wrapper">
-            <img alt="gallery" class="block w-full h-full content__skills--item" src="assets/logos/html5.svg">
-          </div>
-          <div class="w-full content__skills--item-wrapper">
-            <img alt="gallery" class="block w-full h-full content__skills--item" src="assets/logos/css3.svg">
-          </div>
-          <div class="w-full content__skills--item-wrapper">
-            <img alt="gallery" class="block w-full h-full content__skills--item" src="assets/logos/sass.svg">
-          </div>
-          <div class="w-full content__skills--item-wrapper">
-            <img alt="gallery" class="block w-full h-full content__skills--item" src="assets/logos/javascript.svg">
-          </div>
-          <div class="w-full content__skills--item-wrapper">
-            <img alt="gallery" class="block w-full h-full content__skills--item" src="assets/logos/php.svg">
-          </div>
-          <div class="w-full content__skills--item-wrapper">
-            <img alt="gallery" class="block w-full h-full content__skills--item" src="assets/logos/python.svg">
-          </div>
-          <div class="w-full content__skills--item-wrapper">
-            <img alt="gallery" class="block w-full h-full content__skills--item" src="assets/logos/mariadb.svg">
-          </div>
-          <div class="w-full content__skills--item-wrapper">
-            <img alt="gallery" class="block w-full h-full content__skills--item" src="assets/logos/symfony.svg">
-          </div>
-          <div class="w-full content__skills--item-wrapper">
-            <img alt="gallery" class="block w-full h-full content__skills--item" src="assets/logos/ubuntu.svg">
-          </div>
-          <div class="w-full content__skills--item-wrapper">
-            <img alt="gallery" class="block w-full h-full content__skills--item" src="assets/logos/git.svg">
-          </div>
-        </div>
-      </section>
-
-      <section class="content__about-this-site" id="section-about">
-        <h2 class="content__about-this-site-title">About this website</h2>
-        <p>I created this website first of all to learn Vue.js, test Tailwindcss framework and discover
-          <a href="//getbem.com/" class="content--link">BEM methodology</a>
-        </p><br>
-        <p>Technologies used:</p>
-        <ul class="content__about-this-site_list">
-          <li>HTML 5</li>
-          <li>Sass</li>
-          <li><a href="//vuejs.org" class="content--link">Vue.js 3</a></li>
-          <li><a href="//tailwindcss.com" class="content--link">Tailwindcss 3</li>
-          <li><a href="//vitejs.dev" class="content--link">Vite</a></li>
-        </ul>
-        <br>
-        <p>Tools used:</p>
-        <ul class="content__about-this-site_list">
-          <li>Git</li>
-          <li>Visual Studio Code</li>
-        </ul>
-      </section>
-
-      <section class="content__contact" id="section-contact">
-        <h2 class="content__contact-title">Contact me</h2>
-
-        <div v-bind:class="(isFormSubmitted())?'visible p-4 mb-4 text-sm rounded-lg':'invisible'" id="form-alert"
-          role="alert">
-          <div class="form-alert__wrapper">
-            <span v-if="v$.$error">{{formMessage.error.message}}</span>
-            <span v-else-if="!v$.$error">{{formMessage.success.message}}</span>
-          </div>
-        </div>
-
-        <form action="https://formspree.io/f/xlevpylw" method="POST" @submit.prevent="submitForm"
-          class="content_contact-form" novalidate>
-          <div class="content__contact--input">
-            <label class="block mb-8 text-xl font-medium text-gray-900 mb- dark:text-gray-300">
-              Your email:
-            </label>
-            <input type="email" v-model="email" name="email"
-              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-              required>
-            <p v-if="v$.email.$error" class="font-light text-red-700">
-              Please enter a valid email address
-            </p>
-          </div>
-          <div class="content__contact--input">
-            <label class="block mb-8 text-xl font-medium text-gray-900 tex5t-xl mb- dark:text-gray-300">
-              Your message:
-            </label>
-            <textarea name="message" v-model="message" rows="4" required class="block p-2.5 w-full text-xl text-gray-900 bg-gray-50 rounded-lg border border-gray-300
-            focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600"></textarea>
-            <p v-if="v$.message.$error" class="font-light text-red-700">
-              Please enter a valid email address
-            </p>
-          </div>
-
-          <button type="submit" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4
-            focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800
-            dark">Send</button>
-        </form>
-      </section>
-    </main>
-
-
-    <footer class="footer">
-      copyright tomspace 2022-2030 - all rights reserved
-    </footer>
+  <div id="app">
 
   </div>
-
-
+  
 </body>
-
 
 </html>
