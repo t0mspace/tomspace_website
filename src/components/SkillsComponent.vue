@@ -32,11 +32,6 @@ const mariadb: string = new URL(
   import.meta.url
 ) as unknown as ImgHTMLAttributes["src"] as string;
 
-const sql: string = new URL(
-  "@/assets/images/skills/sql.svg",
-  import.meta.url
-) as unknown as ImgHTMLAttributes["src"] as string;
-
 const symfony: string = new URL(
   "@/assets/images/skills/symfony_white.svg",
   import.meta.url
@@ -77,6 +72,7 @@ export default {
       symfony: symfony,
       ubuntu: ubuntu,
       git: git,
+      mariadb: mariadb,
     };
   },
 };
@@ -118,6 +114,9 @@ export default {
       </div>
       <div>
         <img :src="git" alt="" class="skills_item" />
+      </div>
+      <div>
+        <img :src="mariadb" alt="" class="skills_item" />
       </div>
     </div>
   </section>
