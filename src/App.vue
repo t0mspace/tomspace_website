@@ -9,7 +9,9 @@ import ContactComponent from "./components/ContactComponent.vue";
 
 <template>
   <HeaderComponent />
-  <HomeComponent />
+  <scroll-parallax>
+    <HomeComponent />
+  </scroll-parallax>
   <SiteBackground />
 
   <main class="main">

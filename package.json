@@ -19,6 +19,7 @@
     "tsparticles": "^2.8.0",
     "tsparticles-engine": "^2.8.0",
     "vue": "^3.2.45",
+    "vue3-parallax": "^0.1.4",
     "vue3-particles": "^2.8.0"
   },
   "devDependencies": {

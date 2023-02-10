@@ -57,6 +57,7 @@ export default {
   position: absolute;
   left: 0;
   width: 30%;
+  z-index: 50;
 }
 
 .home_intro {
@@ -89,6 +90,7 @@ export default {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
+  z-index: zIndex(home);
 }
 
 .home_intro-hello {

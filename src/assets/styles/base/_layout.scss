@@ -84,3 +84,7 @@ hr:after {
 
   color: $secondary-accent;
 }
+
+.skills {
+  z-index: zIndex(skills);
+}

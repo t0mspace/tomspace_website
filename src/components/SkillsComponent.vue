@@ -128,6 +128,8 @@ export default {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: $primary;
+  width: 100%;
 }
 
 .skills_grid {

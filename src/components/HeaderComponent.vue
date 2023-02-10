@@ -131,7 +131,7 @@ export default {
 }
 
 .header__logo {
-  z-index: 200;
+  // z-index: 200;
   position: absolute;
   order: -1;
   top: 1rem;
@@ -147,6 +147,7 @@ export default {
 .header {
   display: flex;
   flex-direction: row;
+  z-index: zIndex(header);
 
   &:first-child {
     z-index: -100;

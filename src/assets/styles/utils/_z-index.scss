@@ -1,12 +1,14 @@
 $z-index: (
   background: -1,
-  header: 100,
+  header: 600,
   menu: 200,
   footer: 90,
   earth: 100,
   astronaut: 200,
   phylacter: 300,
-  burger: 300,
+  burger: 500,
+  home: 300,
+  skills: 400,
 );
 
 @function zIndex($key) {
