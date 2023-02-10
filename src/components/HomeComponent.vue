@@ -28,7 +28,7 @@ export default {
           <span class="home_intro-hello"> Hi ! </span> <br />
           <br />
           My name's <strong>Thomas</strong><br />
-          I'm a creative geek<br /><br />
+          I'm a creative developer<br /><br />
           Have a nice visit !
         </blockquote>
         <div class="home_intro-triangle flip-y"></div>
@@ -106,16 +106,31 @@ export default {
   }
 }
 
-@media (min-width: $small) and (max-width: 1399px) {
+@media (min-width: $small) and (max-width: $medium) {
   .home_intro-astronaut {
+    left: 45rem;
     width: 15%;
-    left: 30rem;
-    top: 12rem;
   }
+}
 
+@media (min-width: $medium) and (max-width: $large) {
+  .home_intro-astronaut {
+    left: 60rem;
+    width: 15%;
+  }
+}
+
+@media (min-width: $large) {
+  .home_intro-astronaut {
+    left: 75rem;
+    width: 15%;
+  }
+}
+
+@media (min-width: $small) and (max-width: 1399px) {
   .home_intro-text {
     width: 30rem;
-    left: 15rem;
+    left: 35rem;
   }
 
   .home_intro-earth {
@@ -132,17 +147,11 @@ export default {
 @media (min-width: $large) {
   .home_intro-text {
     width: 30rem;
-    left: 40rem;
+    left: 50rem;
   }
 
   .home_intro-triangle {
     left: 23rem;
-  }
-
-  .home_intro-astronaut {
-    top: 8rem;
-    width: 15%;
-    left: 60rem;
   }
 
   .home_intro-earth {
