@@ -22,6 +22,12 @@ export default {
       closeMenuButton: closeMenuButton,
     };
   },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  unmounted() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
   methods: {
     toggleNav: function () {
       this.showMenu = !this.showMenu;
@@ -37,12 +43,24 @@ export default {
         behavior: "smooth",
       });
     },
-    handleScroll(event) {
-      const header = document.querySelector(".header")! as HTMLElement;
+    handleScroll() {
+      const header = document.querySelector(
+        ".header-container"
+      )! as HTMLElement;
+      const openMenuButton = document.querySelector(
+        ".header__menu-btn"
+      )! as HTMLElement;
+      const headerLogo = document.querySelector(
+        ".header__logo"
+      )! as HTMLElement;
       if (window.scrollY >= window.innerHeight) {
         header?.classList.add("header--isFixed");
+        openMenuButton?.classList.add("mr-20");
+        headerLogo?.classList.add("header-logo--isFixed");
       } else {
         header?.classList.remove("header--isFixed");
+        openMenuButton?.classList.remove("mr-20");
+        headerLogo?.classList.remove("header-logo--isFixed");
       }
     },
   },
@@ -50,7 +68,7 @@ export default {
 </script>
 
 <template>
-  <header class="header-container">
+  <header id="header" class="header-container">
     <img :src="logo" class="header__logo" alt="logo" />
     <h1 class="header__title"><span>T M'</span>SPACE</h1>
     <img

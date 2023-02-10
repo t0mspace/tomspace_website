@@ -29,4 +29,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-content: space-between;
+  background-color: $primary;
+}
+
+.header-logo--isFixed {
+  width: 2%;
+  left: 2.3rem;
+  top: 1.8rem;
 }
