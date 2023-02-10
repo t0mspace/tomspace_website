@@ -69,7 +69,18 @@ section:not(.home) {
   padding: 1rem;
 }
 
-.hr {
-  border-top: 1px solid $secondary-accent;
-  width: 5rem;
+// .hr {
+//   border: 5px dotted $secondary-accent;
+//   width: 20px;
+// }
+
+hr {
+  border: none;
+}
+
+hr:after {
+  content: "//////////////////////";
+  height: 1rem;
+
+  color: $secondary-accent;
 }
